@@ -1,0 +1,33 @@
+.table-responsive {
+  padding: 30px;
+  background: rgba($lightColor, 0.5);
+  border-radius: 10px;
+  color: $darkColor;
+}
+
+table {
+  tr, td, th {
+    border-color: $colorMain !important;
+  }
+  td{
+    max-width: 80px;
+  }
+
+  tr:nth-child(2n){
+    background: rgba($greyColor, 0.5);
+  }
+
+  th {
+    background: $colorMain;
+    color: $lightColor;
+  }
+
+  th[data-key] {
+    cursor: pointer;
+
+  }
+
+  .empty-message {
+    padding: 20px 20px 0;
+  }
+}

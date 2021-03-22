@@ -1,0 +1,63 @@
+body{
+  background: linear-gradient(90deg, $colorMain 50%, $colorMain2 100%);
+  color: $lightColor;
+}
+table{
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.btn{
+  min-width: 60px;
+}
+
+[contenteditable='true']{
+  box-shadow: inset 0px 0px 8px 1px $colorMain2;
+  cursor: pointer;
+}
+
+
+.alert{
+  animation-duration: 2s;
+  animation-name: fadeIn;
+  transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.app-section{
+  [class*='container']{
+    @media screen and (min-width: 320px){
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 767px){
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    @media screen and (min-width: 991px){
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    @media screen and (min-width: 1199px){
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+  }
+}

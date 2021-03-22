@@ -1,0 +1,15 @@
+.form-wrapper {
+  padding: 30px;
+  background: rgba($lightColor, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  form{
+    label{
+      display: none;
+    }
+  }
+}
+
+.form-group{
+  margin-bottom: 1.5em;
+}
