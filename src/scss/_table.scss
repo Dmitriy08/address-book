@@ -6,11 +6,13 @@
 }
 
 table {
+  position: relative;
   tr, td, th {
     border-color: $colorMain !important;
   }
   td{
     max-width: 80px;
+    word-break: break-word;
   }
 
   tr:nth-child(2n){
@@ -29,5 +31,12 @@ table {
 
   .empty-message {
     padding: 20px 20px 0;
+  }
+
+  .alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }

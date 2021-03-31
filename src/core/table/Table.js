@@ -80,25 +80,25 @@ export default class Table {
     const email = form.querySelector('#address_book_email');
     const address = form.querySelector('#address_book_address');
 
-    if (phone.value == '') {
+    if (phone.value === '') {
       this.displayMessage(this.form, 'Enter phone', 'danger')
       phone.focus();
       return false;
     }
 
-    if (name.value == '') {
+    if (name.value === '') {
       this.displayMessage(this.form, 'Enter name', 'danger')
       name.focus();
       return false;
     }
 
-    if (email.value == '') {
+    if (email.value === '') {
       this.displayMessage(this.form, 'Enter email', 'danger')
       email.focus();
       return false;
     }
 
-    if (address.value == '') {
+    if (address.value === '') {
       this.displayMessage(this.form, 'Enter address', 'danger')
       address.focus();
       return false;
